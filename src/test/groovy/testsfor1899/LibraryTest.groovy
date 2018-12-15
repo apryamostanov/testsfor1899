@@ -9,7 +9,8 @@ class LibraryTest {
 
     @Test
     void test() {
-        assert Thread.currentThread().getContextClassLoader().getResource("failed.log") != null
+        assert Thread.currentThread().getContextClassLoader().getResource("somefolder/ok.any") != null
+        assert Thread.currentThread().getContextClassLoader().getResource("somefolder/failed.log") != null
     }
 
 }
